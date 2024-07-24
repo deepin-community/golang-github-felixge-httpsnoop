@@ -1,5 +1,33 @@
-template-repository (1.0-1) unstable; urgency=medium
+golang-github-felixge-httpsnoop (1.0.3-3) unstable; urgency=medium
 
-  * Initial release
+  * Team upload.
+  * Exclude codegen when building
+  * Enable tests
+  * Add uscan watch file
+  * Use secure copyright format URI
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Shengjing Zhu <zhsj@debian.org>  Sun, 25 Jun 2023 18:09:56 +0800
+
+golang-github-felixge-httpsnoop (1.0.3-2) unstable; urgency=medium
+
+  * Team upload.
+  * debian/gbp.conf: Set debian-branch to debian/sid for DEP-14 conformance
+  * Change Section from admin to golang
+  * Add "Rules-Requires-Root: no" to debian/control
+  * Use dh-sequence-golang instead of dh-golang and --with=golang
+  * Invoke dh with --builddirectory=_build
+  * Add "Testsuite: autopkgtest-pkg-go" to debian/control
+  * Bump Standards-Version to 4.6.2 (no change)
+  * Mark library package with "Multi-Arch: foreign"
+  * Drop -dev package’s unneeded dependency on ${shlibs:Depends}
+  * Move DH_GOPKG in debian/rules to XS-Go-Import-Path in debian/control
+  * Replace override_dh_auto_install with execute_after_dh_auto_install
+  * Source-only upload for migration to testing
+
+ -- Anthony Fok <foka@debian.org>  Mon, 13 Mar 2023 07:28:08 -0600
+
+golang-github-felixge-httpsnoop (1.0.3-1) unstable; urgency=medium
+
+  * Initial release. (Closes: #1022853)
+
+ -- Thomas Goirand <zigo@debian.org>  Thu, 29 Sep 2022 13:19:14 +0200
